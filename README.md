@@ -10,10 +10,10 @@ El proyecto utiliza Investigación Operativa (Programación Lineal Entera Mixta 
 
 ## Índice
 
-1. [Motivación del Proyecto](#motivacion-del-proyecto)
+1. [Motivación del Proyecto](#motivación-del-proyecto)
 2. [Arquitectura del Proyecto](#arquitectura-del-proyecto)
 3. [Funcionamiento y Escalabilidad](#funcionamiento-y-escalabilidad)
-4. [Cómo usar el proyecto](#como-usar-el-proyecto)
+4. [Cómo usar el proyecto](#cómo-usar-el-proyecto)
 5. [Estructura del Repositorio](#estructura-del-repositorio)
 6. [Sobre el autor](#sobre-el-autor)
 
@@ -117,8 +117,10 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 * `app.py`: Punto de entrada principal. Gestiona la interfaz de usuario (Streamlit), subida de archivos, estado de sesión y desglose tabular de resultados.
 * `optimizador.py`: Motor lógico. Contiene la formulación del modelo MILP (PuLP), integraciones topológicas (NetworkX) y parámetros del solver.
 * `mapa.py`: Módulo dedicado al renderizado gráfico del VRP mediante Folium y cartografía base.
-* `generar_geometrias.py` y `obtencion_matrices.py`: Scripts extractores encargados de las peticiones a las APIs de OSRM.
+* `utils/`: generar_geometrias.py` y `obtencion_matrices.py`: Scripts extractores encargados de las peticiones a las APIs de OSRM.
 * `data/`: Directorio que almacena `nodos_galicia.json`, las geometrías viales y las matrices base precalculadas en formato `.csv`.
+* `assets\`: Imágenes recurso.
+* `.streamlit`: Contiene el archivo config.toml con la configuración principal de streamlit.
 * `requirements.txt`: Listado de dependencias exactas para la ejecución del proyecto.
 
 ---
@@ -127,9 +129,9 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 
 Soy estudiante de Matemáticas con vocación por la **Investigación Operativa, la optimización combinatoria y el análisis de datos**. Busco aplicar modelos matemáticos rigurosos y herramientas computacionales para resolver problemas logísticos y de negocio del mundo real.
 
-* **LinkedIn:** [Tu Nombre en LinkedIn]([TU_ENLACE_A_LINKEDIN_AQUI])
-* **Email:** [Tu Email](mailto:tu.email@ejemplo.com)
-* **GitHub:** [@tu-usuario](https://github.com/[TU-USUARIO-AQUI])
+* **LinkedIn:** pedro-portela-fernandez(www.linkedin.com/in/pedro-portela-fernandez)
+* **Email:** pedro.portela.opt@gmail.com(mailto:pedro.portela.opt@gmail.com)
+* **GitHub:** @pedro-portela-fernandez(https://github.com/pedro-portela-fernandez)
 
-*Si tienes alguna sugerencia de mejora o bien te surge cualquier problema o cuestión con el proyecto, no dudes en abrir una Issue en este repositorio o contactar directamente conmigo. El feedback siempre es bienvenido.*<img width="800" height="450" alt="clip_proyecto_buses-gif" src="https://github.com/user-attachments/assets/e621073f-51bd-495e-9f66-64b1b150c598" />
+*Si tienes alguna sugerencia de mejora o bien te surge cualquier problema o cuestión con el proyecto, no dudes en abrir una Issue en este repositorio o contactar directamente conmigo. El feedback siempre es bienvenido.*
 
