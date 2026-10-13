@@ -1,0 +1,421 @@
+﻿origen,destino,coste_medio
+Viveiro,A Coruña,113.99
+Viveiro,Carballo,147.86
+Viveiro,Ferrol,90.38
+Viveiro,Foz,34.88
+Viveiro,Lalín,169.64
+Viveiro,Lugo,105.49
+Viveiro,Melide,147.22
+Viveiro,Monforte de Lemos,161.39
+Viveiro,Narón,86.32
+Viveiro,Ourense,191.27
+Viveiro,Pontevedra,220.15
+Viveiro,Redondela,235.27
+Viveiro,Ribadeo,60.16
+Viveiro,Ribeira,222.14
+Viveiro,Santiago de Compostela,157.21
+Viveiro,Verín,259.69
+Viveiro,Vigo,242.26
+Viveiro,Vilagarcía de Arousa,203.98
+Viveiro,Vilalba,58.0
+Viveiro,Xinzo de Limia,231.86
+A Coruña,Viveiro,113.41
+A Coruña,Carballo,36.66
+A Coruña,Ferrol,53.03
+A Coruña,Foz,141.2
+A Coruña,Lalín,120.16
+A Coruña,Lugo,98.44
+A Coruña,Melide,70.93
+A Coruña,Monforte de Lemos,154.33
+A Coruña,Narón,49.01
+A Coruña,Ourense,171.84
+A Coruña,Pontevedra,135.31
+A Coruña,Redondela,150.44
+A Coruña,Ribadeo,153.58
+A Coruña,Ribeira,137.3
+A Coruña,Santiago de Compostela,72.37
+A Coruña,Verín,236.97
+A Coruña,Vigo,157.42
+A Coruña,Vilagarcía de Arousa,119.15
+A Coruña,Vilalba,85.45
+A Coruña,Xinzo de Limia,209.14
+Carballo,Viveiro,147.39
+Carballo,A Coruña,36.5
+Carballo,Ferrol,87.01
+Carballo,Foz,172.96
+Carballo,Lalín,100.21
+Carballo,Lugo,130.2
+Carballo,Melide,102.69
+Carballo,Monforte de Lemos,186.09
+Carballo,Narón,82.98
+Carballo,Ourense,151.89
+Carballo,Pontevedra,109.25
+Carballo,Redondela,124.37
+Carballo,Ribadeo,185.34
+Carballo,Ribeira,111.23
+Carballo,Santiago de Compostela,51.84
+Carballo,Verín,217.02
+Carballo,Vigo,131.36
+Carballo,Vilagarcía de Arousa,93.08
+Carballo,Vilalba,117.21
+Carballo,Xinzo de Limia,189.19
+Ferrol,Viveiro,88.8
+Ferrol,A Coruña,53.11
+Ferrol,Carballo,86.98
+Ferrol,Foz,118.59
+Ferrol,Lalín,144.11
+Ferrol,Lugo,110.33
+Ferrol,Melide,92.69
+Ferrol,Monforte de Lemos,166.22
+Ferrol,Narón,4.88
+Ferrol,Ourense,195.78
+Ferrol,Pontevedra,159.26
+Ferrol,Redondela,174.39
+Ferrol,Ribadeo,130.97
+Ferrol,Ribeira,161.25
+Ferrol,Santiago de Compostela,96.32
+Ferrol,Verín,260.91
+Ferrol,Vigo,181.37
+Ferrol,Vilagarcía de Arousa,143.09
+Ferrol,Vilalba,62.83
+Ferrol,Xinzo de Limia,233.09
+Foz,Viveiro,34.87
+Foz,A Coruña,140.49
+Foz,Carballo,172.94
+Foz,Ferrol,118.59
+Foz,Lalín,155.97
+Foz,Lugo,82.98
+Foz,Melide,133.55
+Foz,Monforte de Lemos,138.88
+Foz,Narón,114.54
+Foz,Ourense,177.61
+Foz,Pontevedra,243.05
+Foz,Redondela,258.18
+Foz,Ribadeo,26.56
+Foz,Ribeira,245.04
+Foz,Santiago de Compostela,180.11
+Foz,Verín,246.02
+Foz,Vigo,265.16
+Foz,Vilagarcía de Arousa,226.88
+Foz,Vilalba,59.57
+Foz,Xinzo de Limia,218.2
+Lalín,Viveiro,177.6
+Lalín,A Coruña,120.13
+Lalín,Carballo,99.59
+Lalín,Ferrol,143.68
+Lalín,Foz,158.17
+Lalín,Lugo,71.02
+Lalín,Melide,35.12
+Lalín,Monforte de Lemos,65.81
+Lalín,Narón,139.65
+Lalín,Ourense,54.36
+Lalín,Pontevedra,67.72
+Lalín,Redondela,84.78
+Lalín,Ribadeo,170.55
+Lalín,Ribeira,112.45
+Lalín,Santiago de Compostela,49.99
+Lalín,Verín,119.49
+Lalín,Vigo,94.97
+Lalín,Vilagarcía de Arousa,94.3
+Lalín,Vilalba,124.91
+Lalín,Xinzo de Limia,91.66
+Lugo,Viveiro,102.9
+Lugo,A Coruña,96.97
+Lugo,Carballo,129.42
+Lugo,Ferrol,109.7
+Lugo,Foz,82.33
+Lugo,Lalín,72.53
+Lugo,Melide,50.11
+Lugo,Monforte de Lemos,61.84
+Lugo,Narón,105.65
+Lugo,Ourense,94.16
+Lugo,Pontevedra,140.99
+Lugo,Redondela,181.29
+Lugo,Ribadeo,94.7
+Lugo,Ribeira,168.15
+Lugo,Santiago de Compostela,102.53
+Lugo,Verín,162.58
+Lugo,Vigo,188.28
+Lugo,Vilagarcía de Arousa,150.0
+Lugo,Vilalba,50.21
+Lugo,Xinzo de Limia,134.75
+Melide,Viveiro,155.5
+Melide,A Coruña,71.17
+Melide,Carballo,103.63
+Melide,Ferrol,94.72
+Melide,Foz,136.07
+Melide,Lalín,35.13
+Melide,Lugo,48.95
+Melide,Monforte de Lemos,92.22
+Melide,Narón,90.69
+Melide,Ourense,91.49
+Melide,Pontevedra,116.21
+Melide,Redondela,131.33
+Melide,Ribadeo,148.45
+Melide,Ribeira,118.19
+Melide,Santiago de Compostela,52.57
+Melide,Verín,156.62
+Melide,Vigo,138.32
+Melide,Vilagarcía de Arousa,100.04
+Melide,Vilalba,102.81
+Melide,Xinzo de Limia,128.79
+Monforte de Lemos,Viveiro,160.3
+Monforte de Lemos,A Coruña,154.36
+Monforte de Lemos,Carballo,186.82
+Monforte de Lemos,Ferrol,167.1
+Monforte de Lemos,Foz,140.87
+Monforte de Lemos,Lalín,65.98
+Monforte de Lemos,Lugo,61.44
+Monforte de Lemos,Melide,91.87
+Monforte de Lemos,Narón,163.04
+Monforte de Lemos,Ourense,47.79
+Monforte de Lemos,Pontevedra,131.62
+Monforte de Lemos,Redondela,140.38
+Monforte de Lemos,Ribadeo,153.25
+Monforte de Lemos,Ribeira,177.28
+Monforte de Lemos,Santiago de Compostela,114.82
+Monforte de Lemos,Verín,116.2
+Monforte de Lemos,Vigo,141.36
+Monforte de Lemos,Vilagarcía de Arousa,159.13
+Monforte de Lemos,Vilalba,107.61
+Monforte de Lemos,Xinzo de Limia,88.37
+Narón,Viveiro,84.98
+Narón,A Coruña,49.15
+Narón,Carballo,83.02
+Narón,Ferrol,3.79
+Narón,Foz,114.77
+Narón,Lalín,140.16
+Narón,Lugo,106.51
+Narón,Melide,88.74
+Narón,Monforte de Lemos,162.4
+Narón,Ourense,191.83
+Narón,Pontevedra,155.31
+Narón,Redondela,170.43
+Narón,Ribadeo,127.15
+Narón,Ribeira,157.3
+Narón,Santiago de Compostela,92.37
+Narón,Verín,256.96
+Narón,Vigo,177.42
+Narón,Vilagarcía de Arousa,139.14
+Narón,Vilalba,59.01
+Narón,Xinzo de Limia,229.14
+Ourense,Viveiro,198.84
+Ourense,A Coruña,169.02
+Ourense,Carballo,148.48
+Ourense,Ferrol,192.56
+Ourense,Foz,179.41
+Ourense,Lalín,51.01
+Ourense,Lugo,92.26
+Ourense,Melide,87.14
+Ourense,Monforte de Lemos,47.03
+Ourense,Narón,188.54
+Ourense,Pontevedra,92.96
+Ourense,Redondela,93.81
+Ourense,Ribadeo,191.79
+Ourense,Ribeira,161.34
+Ourense,Santiago de Compostela,98.88
+Ourense,Verín,69.64
+Ourense,Vigo,94.79
+Ourense,Vilagarcía de Arousa,126.53
+Ourense,Vilalba,146.15
+Ourense,Xinzo de Limia,41.81
+Pontevedra,Viveiro,218.73
+Pontevedra,A Coruña,134.8
+Pontevedra,Carballo,108.2
+Pontevedra,Ferrol,158.35
+Pontevedra,Foz,241.38
+Pontevedra,Lalín,67.63
+Pontevedra,Lugo,163.25
+Pontevedra,Melide,114.46
+Pontevedra,Monforte de Lemos,131.78
+Pontevedra,Narón,154.32
+Pontevedra,Ourense,93.6
+Pontevedra,Redondela,17.95
+Pontevedra,Ribadeo,253.75
+Pontevedra,Ribeira,72.47
+Pontevedra,Santiago de Compostela,64.71
+Pontevedra,Verín,159.39
+Pontevedra,Vigo,27.15
+Pontevedra,Vilagarcía de Arousa,33.46
+Pontevedra,Vilalba,185.62
+Pontevedra,Xinzo de Limia,131.56
+Redondela,Viveiro,234.63
+Redondela,A Coruña,150.71
+Redondela,Carballo,124.11
+Redondela,Ferrol,174.25
+Redondela,Foz,257.28
+Redondela,Lalín,84.52
+Redondela,Lugo,179.15
+Redondela,Melide,130.36
+Redondela,Monforte de Lemos,140.09
+Redondela,Narón,170.23
+Redondela,Ourense,93.83
+Redondela,Pontevedra,17.9
+Redondela,Ribadeo,269.66
+Redondela,Ribeira,88.38
+Redondela,Santiago de Compostela,80.61
+Redondela,Verín,158.96
+Redondela,Vigo,14.38
+Redondela,Vilagarcía de Arousa,49.37
+Redondela,Vilalba,201.52
+Redondela,Xinzo de Limia,131.13
+Ribadeo,Viveiro,60.1
+Ribadeo,A Coruña,153.22
+Ribadeo,Carballo,185.68
+Ribadeo,Ferrol,131.33
+Ribadeo,Foz,26.61
+Ribadeo,Lalín,168.71
+Ribadeo,Lugo,95.71
+Ribadeo,Melide,146.29
+Ribadeo,Monforte de Lemos,151.61
+Ribadeo,Narón,127.27
+Ribadeo,Ourense,190.34
+Ribadeo,Pontevedra,255.78
+Ribadeo,Redondela,270.91
+Ribadeo,Ribeira,257.77
+Ribadeo,Santiago de Compostela,192.84
+Ribadeo,Verín,258.76
+Ribadeo,Vigo,277.9
+Ribadeo,Vilagarcía de Arousa,239.62
+Ribadeo,Vilalba,72.31
+Ribadeo,Xinzo de Limia,230.93
+Ribeira,Viveiro,221.79
+Ribeira,A Coruña,137.86
+Ribeira,Carballo,111.27
+Ribeira,Ferrol,161.41
+Ribeira,Foz,244.44
+Ribeira,Lalín,112.55
+Ribeira,Lugo,166.31
+Ribeira,Melide,117.52
+Ribeira,Monforte de Lemos,177.22
+Ribeira,Narón,157.39
+Ribeira,Ourense,164.22
+Ribeira,Pontevedra,72.99
+Ribeira,Redondela,88.12
+Ribeira,Ribadeo,256.81
+Ribeira,Santiago de Compostela,67.77
+Ribeira,Verín,229.35
+Ribeira,Vigo,95.11
+Ribeira,Vilagarcía de Arousa,45.31
+Ribeira,Vilalba,188.68
+Ribeira,Xinzo de Limia,201.53
+Santiago de Compostela,Viveiro,156.74
+Santiago de Compostela,A Coruña,72.81
+Santiago de Compostela,Carballo,51.67
+Santiago de Compostela,Ferrol,96.36
+Santiago de Compostela,Foz,179.38
+Santiago de Compostela,Lalín,50.36
+Santiago de Compostela,Lugo,101.34
+Santiago de Compostela,Melide,52.54
+Santiago de Compostela,Monforte de Lemos,115.04
+Santiago de Compostela,Narón,92.33
+Santiago de Compostela,Ourense,102.04
+Santiago de Compostela,Pontevedra,65.54
+Santiago de Compostela,Redondela,80.66
+Santiago de Compostela,Ribadeo,191.76
+Santiago de Compostela,Ribeira,67.52
+Santiago de Compostela,Verín,167.17
+Santiago de Compostela,Vigo,87.65
+Santiago de Compostela,Vilagarcía de Arousa,49.37
+Santiago de Compostela,Vilalba,123.62
+Santiago de Compostela,Xinzo de Limia,139.34
+Verín,Viveiro,268.55
+Verín,A Coruña,237.94
+Verín,Carballo,217.4
+Verín,Ferrol,261.48
+Verín,Foz,249.12
+Verín,Lalín,119.93
+Verín,Lugo,161.97
+Verín,Melide,156.06
+Verín,Monforte de Lemos,116.75
+Verín,Narón,257.46
+Verín,Ourense,70.74
+Verín,Pontevedra,160.49
+Verín,Redondela,159.43
+Verín,Ribadeo,261.5
+Verín,Ribeira,230.26
+Verín,Santiago de Compostela,167.8
+Verín,Vigo,160.4
+Verín,Vilagarcía de Arousa,194.06
+Verín,Vilalba,215.86
+Verín,Xinzo de Limia,31.52
+Vigo,Viveiro,240.21
+Vigo,A Coruña,156.28
+Vigo,Carballo,129.68
+Vigo,Ferrol,179.83
+Vigo,Foz,262.85
+Vigo,Lalín,92.47
+Vigo,Lugo,184.73
+Vigo,Melide,135.93
+Vigo,Monforte de Lemos,145.15
+Vigo,Narón,175.8
+Vigo,Ourense,98.88
+Vigo,Pontevedra,25.28
+Vigo,Redondela,12.86
+Vigo,Ribadeo,275.23
+Vigo,Ribeira,93.95
+Vigo,Santiago de Compostela,86.19
+Vigo,Verín,164.01
+Vigo,Vilagarcía de Arousa,54.94
+Vigo,Vilalba,207.09
+Vigo,Xinzo de Limia,136.19
+Vilagarcía de Arousa,Viveiro,203.75
+Vilagarcía de Arousa,A Coruña,119.82
+Vilagarcía de Arousa,Carballo,93.22
+Vilagarcía de Arousa,Ferrol,143.37
+Vilagarcía de Arousa,Foz,226.39
+Vilagarcía de Arousa,Lalín,70.94
+Vilagarcía de Arousa,Lugo,148.27
+Vilagarcía de Arousa,Melide,99.47
+Vilagarcía de Arousa,Monforte de Lemos,135.62
+Vilagarcía de Arousa,Narón,139.34
+Vilagarcía de Arousa,Ourense,122.62
+Vilagarcía de Arousa,Pontevedra,31.03
+Vilagarcía de Arousa,Redondela,46.16
+Vilagarcía de Arousa,Ribadeo,238.77
+Vilagarcía de Arousa,Ribeira,46.62
+Vilagarcía de Arousa,Santiago de Compostela,49.73
+Vilagarcía de Arousa,Verín,187.74
+Vilagarcía de Arousa,Vigo,53.14
+Vilagarcía de Arousa,Vilalba,170.64
+Vilagarcía de Arousa,Xinzo de Limia,159.92
+Vilalba,Viveiro,56.88
+Vilalba,A Coruña,85.61
+Vilalba,Carballo,118.07
+Vilalba,Ferrol,63.68
+Vilalba,Foz,59.95
+Vilalba,Lalín,116.3
+Vilalba,Lugo,52.16
+Vilalba,Melide,93.88
+Vilalba,Monforte de Lemos,108.05
+Vilalba,Narón,59.62
+Vilalba,Ourense,137.93
+Vilalba,Pontevedra,188.18
+Vilalba,Redondela,203.3
+Vilalba,Ribadeo,72.33
+Vilalba,Ribeira,190.16
+Vilalba,Santiago de Compostela,125.23
+Vilalba,Verín,206.35
+Vilalba,Vigo,210.29
+Vilalba,Vilagarcía de Arousa,172.01
+Vilalba,Xinzo de Limia,178.52
+Xinzo de Limia,Viveiro,239.17
+Xinzo de Limia,A Coruña,208.56
+Xinzo de Limia,Carballo,188.02
+Xinzo de Limia,Ferrol,232.1
+Xinzo de Limia,Foz,219.74
+Xinzo de Limia,Lalín,90.55
+Xinzo de Limia,Lugo,132.59
+Xinzo de Limia,Melide,126.67
+Xinzo de Limia,Monforte de Lemos,87.36
+Xinzo de Limia,Narón,228.08
+Xinzo de Limia,Ourense,41.35
+Xinzo de Limia,Pontevedra,131.11
+Xinzo de Limia,Redondela,130.05
+Xinzo de Limia,Ribadeo,232.12
+Xinzo de Limia,Ribeira,200.88
+Xinzo de Limia,Santiago de Compostela,138.42
+Xinzo de Limia,Verín,31.44
+Xinzo de Limia,Vigo,131.02
+Xinzo de Limia,Vilagarcía de Arousa,164.68
+Xinzo de Limia,Vilalba,186.48

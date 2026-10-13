@@ -1,0 +1,149 @@
+[
+  {
+    "id": 0,
+    "nombre": "Viveiro",
+    "estacion": "Recinto del Festival",
+    "lat": 43.67648126405773,
+    "lon": -7.591543703247712
+  },
+  {
+    "id": 1,
+    "nombre": "A Coruña",
+    "estacion": "Estación de Autobuses de A Coruña",
+    "lat": 43.35333248550068,
+    "lon": -8.405329549291517
+  },
+  {
+    "id": 2,
+    "nombre": "Carballo",
+    "estacion": "Estación de Autobuses de Carballo",
+    "lat": 43.21030747220953, 
+    "lon": -8.695649706747256
+  },
+  {
+    "id": 3,
+    "nombre": "Ferrol",
+    "estacion": "Estación de Autobuses de Ferrol",
+    "lat": 43.48845792648359,
+    "lon": -8.229232087713983
+  },
+  {
+    "id": 4,
+    "nombre": "Foz",
+    "estacion": "Estación de Autobuses de Foz",
+    "lat": 43.57214617000009, 
+    "lon": -7.25975676758843
+  },
+  {
+    "id": 5,
+    "nombre": "Lalín",
+    "estacion": "Estación de Autobuses de Lalín",
+    "lat": 42.65729391058879, 
+    "lon": -8.113329144351104
+  },
+  {
+    "id": 6,
+    "nombre": "Lugo",
+    "estacion": "Estación de Autobuses de Lugo",
+    "lat": 43.00882493122189, 
+    "lon": -7.554087657308047
+  },
+  {
+    "id": 7,
+    "nombre": "Melide",
+    "estacion": "Parada de Autobuses de Melide",
+    "lat": 42.91153904181512, 
+    "lon": -8.007054800240963
+  },
+  {
+    "id": 8,
+    "nombre": "Monforte de Lemos",
+    "estacion": "Estación de Autobuses de Monforte de Lemos",
+    "lat": 42.52694837149425, 
+    "lon": -7.508580005014019
+  },
+  {
+    "id": 9,
+    "nombre": "Narón",
+    "estacion": "Concello de Narón",
+    "lat": 43.501600390453554, 
+    "lon": -8.192685532314567
+  },
+  {
+    "id": 10,
+    "nombre": "Ourense",
+    "estacion": "Estación Intermodal de Ourense",
+    "lat": 42.350693409707816, 
+    "lon": -7.873562541471206
+  },
+  {
+    "id": 11,
+    "nombre": "Pontevedra",
+    "estacion": "Estación de Autobuses de Pontevedra",
+    "lat": 42.4214057446168,
+    "lon": -8.637257533208114
+  },
+  {
+    "id": 12,
+    "nombre": "Redondela",
+    "estacion": "Redondela-Picota",
+    "lat": 42.28753169508475, 
+    "lon": -8.607099567377883
+  },
+  {
+    "id": 13,
+    "nombre": "Ribadeo",
+    "estacion": "Estación de Autobuses de Ribadeo",
+    "lat": 43.54093381932955, 
+    "lon": -7.040505655062121
+  },
+  {
+    "id": 14,
+    "nombre": "Ribeira",
+    "estacion": "Estación de Autobuses de Ribeira",
+    "lat": 42.55821802835623, 
+    "lon": -8.991951772470234
+  },
+  {
+    "id": 15,
+    "nombre": "Santiago de Compostela",
+    "estacion": "Estación Intermodal de Santiago de Compostela",
+    "lat": 42.87031000845298, 
+    "lon": -8.54307258722474
+  },
+  {
+    "id": 16,
+    "nombre": "Verín",
+    "estacion": "Estación de Autobuses de Verín",
+    "lat": 41.93983635877225, 
+    "lon": -7.43400512419033
+  },
+  {
+    "id": 17,
+    "nombre": "Vigo",
+    "estacion": "Estación Intermodal de Vigo (Vialia)",
+    "lat": 42.235281862725294, 
+    "lon": -8.711034366922092
+  },
+  {
+    "id": 18,
+    "nombre": "Vilagarcía de Arousa",
+    "estacion": "Estación de Autobuses de Vilagarcía de Arousa",
+    "lat": 42.599450041116846, 
+    "lon": -8.76199724232906
+  },
+  {
+    "id": 19,
+    "nombre": "Vilalba",
+    "estacion": "Estación de Autobuses de Vilalba",
+    "lat": 43.3089914527681, 
+    "lon": -7.673112131868756
+  },
+  {
+    "id": 20,
+    "nombre": "Xinzo de Limia",
+    "estacion": "Estación de Autobuses de Xinzo de Limia",
+    "lat": 42.06455057990143, 
+    "lon": -7.727106657670939
+  }
+]
