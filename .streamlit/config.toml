@@ -1,0 +1,17 @@
+# CONFIGURACIÓN ESTILO DE LA PÁGINA
+
+[theme]
+# Color principal.
+primaryColor = "#170042"
+
+# Color de fondo principal.
+backgroundColor = "#f9f7ff"
+
+# Color de fondo de bloques secundarios.
+secondaryBackgroundColor = "#e1deff"
+
+# Color del texto general.
+textColor = "#170042"
+
+# Tipo de fuente. "sans serif", "serif", o "monospace"
+font = "serif"
