@@ -4,8 +4,9 @@ Aplicación web interactiva que resuelve una variante del Problema de Enrutamien
 
 El proyecto utiliza Investigación Operativa (Programación Lineal Entera Mixta - MILP) para asignar flotas de autobuses de diferentes capacidades y trazar las rutas óptimas, minimizando la distancia o el tiempo total de viaje.
 
-[**Prueba la aplicación en vivo aquí**]([ENLACE_A_TU_STREAMLIT_CLOUD_AQUI])
+[**Prueba la aplicación aquí**]([ENLACE_A_STREAMLIT_CLOUD_AQUI])
 
+<img src="assets/clip_proyecto_buses-gif.gif" width="100%">
 
 ## Índice
 
@@ -39,8 +40,9 @@ El desarrollo se divide en tres bloques técnicos fundamentales:
 Para que el modelo de optimización no se base en distancias teóricas, se ha construido una red basada en la infraestructura vial real mediante la API de **OSRM (Open Source Routing Machine)**. 
 
 El repositorio incluye los scripts responsables de la recolección de esta información:
-* **`obtencion_matrices_2.py`**: A partir de las coordenadas de las 21 ciudades, consulta el endpoint *Table API* (`table/v1/driving`) de OSRM. Extrae las matrices asimétricas de duraciones y distancias de conducción, procesándolas con Pandas para generar los archivos `matriz_distancias.csv` y `matriz_tiempos.csv`.
-* **`generar_geometrias_2.py`**: Consulta el endpoint *Route API* (`route/v1/driving`) para descargar las polilíneas GeoJSON exactas del trayecto por carretera entre cada par de ciudades. Se almacena en `geometrias_rutas.json`, permitiendo a *Folium* renderizar en la web el trazado físico real de las rutas calculadas.
+* **`obtencion_matrices.py`**: A partir de las coordenadas de las 21 ciudades, consulta el endpoint *Table API* (`table/v1/driving`) de OSRM. Extrae las matrices asimétricas de duraciones y distancias por carretera, procesándolas con Pandas para generar los archivos `matriz_distancias.csv` y `matriz_tiempos.csv`.
+* **`generar_geometrias.py`**: Consulta el endpoint *Route API* (`route/v1/driving`) para descargar las polilíneas GeoJSON exactas del trayecto por carretera entre cada par de ciudades. Se almacena en `geometrias_rutas.json`, permitiendo a *Folium* renderizar en la web el trazado físico real de las rutas calculadas.
+Estas funciones se ejecutan una sola vez para extraer y generar los archivos de datos, los cuales se cargan de forma local en el programa principal para garantizar una respuesta inmediata en cada ejecución.
 
 ### 2. Motor de Optimización
 Es el núcleo de la aplicación y donde reside la mayor complejidad algorítmica, alojado en `optimizador.py`. El problema está formulado utilizando la librería **PuLP** y el resolutor de código abierto **CBC**, incorporando técnicas para asegurar el rendimiento:
@@ -71,13 +73,13 @@ El sistema está diseñado de forma modular. Las paradas se leen desde un archiv
 
 ## Cómo usar el proyecto
 
-### Opción 1: Uso rápido en la Nube (Recomendado)
+### Opción 1: Uso rápido en la Nube
 
 El proyecto está desplegado en *Streamlit Community Cloud*, por lo que no requiere ninguna instalación en tu equipo:
 
 1. Entra en la [**Aplicación Web**]([ENLACE_A_TU_STREAMLIT_CLOUD_AQUI]).
 2. Selecciona la métrica a optimizar (Distancia o Tiempo) y el tiempo límite de ejecución del solver.
-3. Introduce la demanda de pasajeros manualmente en la tabla o sube un archivo Excel/CSV siguiendo el formato de la plantilla proporcionada. (poner aqui un enlace con la plantilla)
+3. Introduce la demanda de pasajeros manualmente en la tabla o sube un archivo con los datos. Pulsando en "Instrucciones de formato" puedes ver los tipos de archivo permitidos y descargar un archivo de ejemplo.
 4. Haz clic en **"Calcular rutas"** y explora los resultados.
 
 ### Opción 2: Ejecución Local
@@ -88,8 +90,8 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/[TU-USUARIO-AQUI]/[NOMBRE-DEL-REPO].git
-   cd [NOMBRE-DEL-REPO]
+   git clone https://github.com/pedro-portela-fernandez/optimizador-rutas-autobuses.git
+   cd optimizador-rutas-autobuses
    ```
 
 2. **Crea y activa un entorno virtual**:
@@ -115,7 +117,7 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 * `app.py`: Punto de entrada principal. Gestiona la interfaz de usuario (Streamlit), subida de archivos, estado de sesión y desglose tabular de resultados.
 * `optimizador.py`: Motor lógico. Contiene la formulación del modelo MILP (PuLP), integraciones topológicas (NetworkX) y parámetros del solver.
 * `mapa.py`: Módulo dedicado al renderizado gráfico del VRP mediante Folium y cartografía base.
-* `generar_geometrias_2.py` y `obtencion_matrices_2.py`: Scripts extractores encargados de las peticiones a las APIs de OSRM.
+* `generar_geometrias.py` y `obtencion_matrices.py`: Scripts extractores encargados de las peticiones a las APIs de OSRM.
 * `data/`: Directorio que almacena `nodos_galicia.json`, las geometrías viales y las matrices base precalculadas en formato `.csv`.
 * `requirements.txt`: Listado de dependencias exactas para la ejecución del proyecto.
 
