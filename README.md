@@ -21,7 +21,7 @@ El proyecto utiliza Investigación Operativa (Programación Lineal Entera Mixta 
 
 ## Motivación del Proyecto
 
-Este proyecto nace durante el verano como una iniciativa personal para adquirir nuevas competencias orientadas a mi futuro laboral. Mi objetivo principal fue combinar el desarrollo en Python con los conocimientos matemáticos adquiridos durante mi grado universitario, centrándome específicamente en el área de la **Investigación Operativa**.
+Este proyecto nace este verano como una iniciativa personal para adquirir nuevas competencias orientadas a mi futuro laboral. Mi objetivo principal fue combinar el desarrollo en Python con los conocimientos matemáticos adquiridos durante mi grado universitario, centrándome específicamente en el área de la **Investigación Operativa**.
 
 El reto logístico planteado consiste en gestionar el transporte de miles de asistentes a un gran evento en Viveiro desde 20 de las principales ciudades gallegas. El objetivo no es solo encontrar "una ruta", sino diseñar matemáticamente la **red de transporte más eficiente**, logrando:
 
@@ -42,17 +42,15 @@ Para que el modelo de optimización no se base en distancias teóricas, se ha co
 El repositorio incluye los scripts responsables de la recolección de esta información:
 * **`obtencion_matrices.py`**: A partir de las coordenadas de las 21 ciudades, consulta el endpoint *Table API* (`table/v1/driving`) de OSRM. Extrae las matrices asimétricas de duraciones y distancias por carretera, procesándolas con Pandas para generar los archivos `matriz_distancias.csv` y `matriz_tiempos.csv`.
 * **`generar_geometrias.py`**: Consulta el endpoint *Route API* (`route/v1/driving`) para descargar las polilíneas GeoJSON exactas del trayecto por carretera entre cada par de ciudades. Se almacena en `geometrias_rutas.json`, permitiendo a *Folium* renderizar en la web el trazado físico real de las rutas calculadas.
+
 Estas funciones se ejecutan una sola vez para extraer y generar los archivos de datos, los cuales se cargan de forma local en el programa principal para garantizar una respuesta inmediata en cada ejecución.
 
 ### 2. Motor de Optimización
 Es el núcleo de la aplicación y donde reside la mayor complejidad algorítmica, alojado en `optimizador.py`. El problema está formulado utilizando la librería **PuLP** y el resolutor de código abierto **CBC**, incorporando técnicas para asegurar el rendimiento:
-* **Corrección de la Desigualdad Triangular (Grafos):** Se implementó el algoritmo de Dijkstra con **NetworkX** para recalcular los caminos mínimos. Esto asegura que el coste directo entre dos nodos $A 
-ightarrow C$ siempre sea menor o igual que el desvío $A 
-ightarrow B 
-ightarrow C$, evitando comportamientos anómalos del solver.
+* **Corrección de la Desigualdad Triangular (Grafos):** Se implementó el algoritmo de Dijkstra con **NetworkX** para recalcular los caminos mínimos. Esto asegura que el coste directo entre dos nodos $A-C$ siempre sea menor o igual que el desvío $A-B-C$, evitando comportamientos anómalos del solver.
 * **Heurística de Asignación Directa:** Los autobuses que logran llenarse en una única parada de origen se extraen del modelo algebraico principal, asignándoles rutas directas de inmediato. Esto reduce drásticamente el espacio de búsqueda.
-* **Poda Estricta de Variables de Decisión ($x_{i,j}$):** Se incluyó una condición lógica pre-optimización que impide la creación de variables binarias para trayectos que alejen el autobús de su destino final así como tampoco se consideran trayectos entre paradas absurdamente lejanas. Esta técnica reduce considerablemente la cantidad de variables y con ello el tiempo de ejecución.
-* **Variables de Holgura Dinámicas:** Implementación de bucles para inyectar recursos (autobuses disponibles) de forma controlada ($+\epsilon$), asegurando que el problema siempre sea factible sin saturar la memoria.
+* **Poda Estricta de Variables de Decisión ($x_{k,i,j}$):** Se incluyó una condición lógica pre-optimización que impide la creación de variables binarias para trayectos que alejen el autobús de su destino final así como tampoco se consideran trayectos entre paradas absurdamente lejanas. Esta técnica reduce considerablemente la cantidad de variables y con ello el tiempo de ejecución.
+* **Variables de Holgura Dinámicas:** Implementación de bucles para inyectar recursos (autobuses disponibles) de forma controlada, asegurando que el problema siempre sea factible sin saturar la memoria.
 
 ### 3. Interfaz Gráfica
 Desarrollada con **Streamlit**, proporciona un entorno accesible donde los usuarios pueden interactuar con el modelo matemático sin necesidad de conocimientos de programación, visualizando los resultados a través de tablas de datos y mapas interactivos renderizados con **Folium**.
@@ -97,7 +95,7 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 2. **Crea y activa un entorno virtual**:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # En Windows: venv\Scriptsctivate
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
    ```
 
 3. **Instala las dependencias necesarias:**
@@ -115,12 +113,12 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 ## Estructura del Repositorio
 
 * `app.py`: Punto de entrada principal. Gestiona la interfaz de usuario (Streamlit), subida de archivos, estado de sesión y desglose tabular de resultados.
-* `optimizador.py`: Motor lógico. Contiene la formulación del modelo MILP (PuLP), integraciones topológicas (NetworkX) y parámetros del solver.
-* `mapa.py`: Módulo dedicado al renderizado gráfico del VRP mediante Folium y cartografía base.
-* `utils/`: generar_geometrias.py` y `obtencion_matrices.py`: Scripts extractores encargados de las peticiones a las APIs de OSRM.
+* `optimizador.py`: Motor lógico. Contiene la formulación del modelo MILP (PuLP).
+* `mapa.py`: Módulo dedicado al renderizado gráfico del VRP mediante Folium.
+* `utils/`: `generar_geometrias.py` y `obtencion_matrices.py`, scripts extractores encargados de las peticiones a las APIs de OSRM.
 * `data/`: Directorio que almacena `nodos_galicia.json`, las geometrías viales y las matrices base precalculadas en formato `.csv`.
-* `assets\`: Imágenes recurso.
-* `.streamlit`: Contiene el archivo config.toml con la configuración principal de streamlit.
+* `assets/`: Imágenes recurso.
+* `.streamlit/`: Contiene el archivo config.toml con la configuración principal de streamlit.
 * `requirements.txt`: Listado de dependencias exactas para la ejecución del proyecto.
 
 ---
@@ -129,9 +127,9 @@ Ideal para auditar el código, modificar coeficientes fijos del modelo, realizar
 
 Soy estudiante de Matemáticas con vocación por la **Investigación Operativa, la optimización combinatoria y el análisis de datos**. Busco aplicar modelos matemáticos rigurosos y herramientas computacionales para resolver problemas logísticos y de negocio del mundo real.
 
-* **LinkedIn:** pedro-portela-fernandez(www.linkedin.com/in/pedro-portela-fernandez)
-* **Email:** pedro.portela.opt@gmail.com(mailto:pedro.portela.opt@gmail.com)
-* **GitHub:** @pedro-portela-fernandez(https://github.com/pedro-portela-fernandez)
+* **LinkedIn:** [Pedro Portela Fernández](https://www.linkedin.com/in/pedro-portela-fernandez)
+* **Email:** [pedro.portela.opt@gmail.com](mailto:pedro.portela.opt@gmail.com)
+* **GitHub:** [@pedro-portela-fernandez](https://github.com/pedro-portela-fernandez)
 
 *Si tienes alguna sugerencia de mejora o bien te surge cualquier problema o cuestión con el proyecto, no dudes en abrir una Issue en este repositorio o contactar directamente conmigo. El feedback siempre es bienvenido.*
 
