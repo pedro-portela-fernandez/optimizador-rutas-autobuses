@@ -4,7 +4,7 @@ Aplicación web interactiva que resuelve una variante del Problema de Enrutamien
 
 El proyecto utiliza Investigación Operativa (Programación Lineal Entera Mixta - MILP) para asignar flotas de autobuses de diferentes capacidades y trazar las rutas óptimas, minimizando la distancia o el tiempo total de viaje.
 
-[**Prueba la aplicación aquí**]([ENLACE_A_STREAMLIT_CLOUD_AQUI])
+[**Prueba la aplicación aquí**](https://optimizador-rutas-autobuses.streamlit.app/)
 
 <img src="assets/clip_proyecto_buses-gif.gif" width="100%">
 
@@ -75,7 +75,7 @@ El sistema está diseñado de forma modular. Las paradas se leen desde un archiv
 
 El proyecto está desplegado en *Streamlit Community Cloud*, por lo que no requiere ninguna instalación en tu equipo:
 
-1. Entra en la [**Aplicación Web**]([ENLACE_A_TU_STREAMLIT_CLOUD_AQUI]).
+1. Entra en la [**Aplicación Web**](https://optimizador-rutas-autobuses.streamlit.app/).
 2. Selecciona la métrica a optimizar (Distancia o Tiempo) y el tiempo límite de ejecución del solver.
 3. Introduce la demanda de pasajeros manualmente en la tabla o sube un archivo con los datos. Pulsando en "Instrucciones de formato" puedes ver los tipos de archivo permitidos y descargar un archivo de ejemplo.
 4. Haz clic en **"Calcular rutas"** y explora los resultados.
